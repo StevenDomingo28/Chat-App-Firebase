@@ -20,13 +20,13 @@ firebase.initializeApp({
   measurementId: 'G-P58VBCQ0SY',
 });
 
-const auth = firebase.auth();
+var auth = firebase.auth();
 const firestore = firebase.firestore();
 const analytics = firebase.analytics();
 
 function App() {
   const [user] = useAuthState(auth);
-
+  alert('Hi Friends');
   return (
     <div className="App">
       <header>
